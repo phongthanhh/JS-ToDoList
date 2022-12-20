@@ -38,7 +38,6 @@ export default class TodoList extends ToDo {
         getAddTodO.onclick = () => {
             let valueNewTask = getEl('newTask').value
             if (valueNewTask) {
-                // Demo
                 let newTask = new ToDo('1', valueNewTask, 'done')
                 this.ToDoArray.push(newTask)
                 console.log(this.ToDoArray);

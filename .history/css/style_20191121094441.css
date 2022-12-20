@@ -328,20 +328,3 @@ ul.todo#completed li .buttons .complete .far{
 ul.todo#completed span{
   color: #25b99a;
 }
-
-/* .toDoButton button{
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-.toDoButton button i{
-  font-size: 1rem;
-  color: rgb(152, 150, 150);
-}
-.toDoButton .btn-del:hover i {
-color: #FA396B;
-}
-.toDoButton .btn-check:hover i {
-  color: rgb(19, 170, 19);
-  } */
-

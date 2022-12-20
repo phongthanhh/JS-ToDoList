@@ -329,7 +329,7 @@ ul.todo#completed span{
   color: #25b99a;
 }
 
-/* .toDoButton button{
+.toDoButton button{
   border: none;
   background: transparent;
   cursor: pointer;
@@ -343,5 +343,5 @@ color: #FA396B;
 }
 .toDoButton .btn-check:hover i {
   color: rgb(19, 170, 19);
-  } */
+  }
 

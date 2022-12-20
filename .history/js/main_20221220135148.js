@@ -4,6 +4,6 @@ let ToDoListMain = new ToDoList();
 
 const getArr = () => {
     ToDoListMain.renderToDo()
-    ToDoListMain.addToDo()
+
 }
 getArr()

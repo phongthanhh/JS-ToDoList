@@ -32,13 +32,11 @@ export default class TodoList extends ToDo {
         })
         getToDo.innerHTML = contentTodO
     }
-
     addToDo = (ToDoObj) => {
         const getAddTodO = getEl('addItem')
         getAddTodO.onclick = () => {
             let valueNewTask = getEl('newTask').value
             if (valueNewTask) {
-                // Demo
                 let newTask = new ToDo('1', valueNewTask, 'done')
                 this.ToDoArray.push(newTask)
                 console.log(this.ToDoArray);
@@ -52,8 +50,7 @@ export default class TodoList extends ToDo {
         console.log(id)
     }
 
+
 }
 
-
-
-
+window.removeTodo = removeTodo;

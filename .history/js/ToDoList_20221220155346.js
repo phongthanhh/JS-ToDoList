@@ -23,37 +23,21 @@ export default class TodoList extends ToDo {
         this.ToDoArray.map((item, index) => {
             contentTodO += `
                 <li>${item.content} 
-                    <div class='buttons' > 
-                        <button class='remove' onclick="${removeTodo(index)}"> <i class="fa-regular fa-trash-can"></i></button>
-                        <button class='complete'> <i class="fa-regular fa-circle-check"></i></button>
+                    <div class='toDoButton' > 
+                        <button class='btn-del'> <i class="fa-regular fa-trash-can"></i></button>
+                        <button class='btn-check'> <i class="fa-regular fa-circle-check"></i></button>
                    </div> 
                 </li>
             `
         })
         getToDo.innerHTML = contentTodO
     }
-
     addToDo = (ToDoObj) => {
         const getAddTodO = getEl('addItem')
         getAddTodO.onclick = () => {
-            let valueNewTask = getEl('newTask').value
-            if (valueNewTask) {
-                // Demo
-                let newTask = new ToDo('1', valueNewTask, 'done')
-                this.ToDoArray.push(newTask)
-                console.log(this.ToDoArray);
-                this.renderToDo()
-            }
+            getNewTask = getEl('newTask')
         }
-    }
 
-
-    removeTodo = id => {
-        console.log(id)
     }
 
 }
-
-
-
-

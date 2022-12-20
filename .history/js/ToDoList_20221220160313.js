@@ -24,7 +24,7 @@ export default class TodoList extends ToDo {
             contentTodO += `
                 <li>${item.content} 
                     <div class='buttons' > 
-                        <button class='remove' onclick="${removeTodo(index)}"> <i class="fa-regular fa-trash-can"></i></button>
+                        <button class='remove'> <i class="fa-regular fa-trash-can"></i></button>
                         <button class='complete'> <i class="fa-regular fa-circle-check"></i></button>
                    </div> 
                 </li>
@@ -32,13 +32,11 @@ export default class TodoList extends ToDo {
         })
         getToDo.innerHTML = contentTodO
     }
-
     addToDo = (ToDoObj) => {
         const getAddTodO = getEl('addItem')
         getAddTodO.onclick = () => {
             let valueNewTask = getEl('newTask').value
             if (valueNewTask) {
-                // Demo
                 let newTask = new ToDo('1', valueNewTask, 'done')
                 this.ToDoArray.push(newTask)
                 console.log(this.ToDoArray);
@@ -46,14 +44,8 @@ export default class TodoList extends ToDo {
             }
         }
     }
-
-
     removeTodo = id => {
-        console.log(id)
+
     }
 
 }
-
-
-
-
